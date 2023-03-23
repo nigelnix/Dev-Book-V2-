@@ -1,0 +1,213 @@
+.profile-container {
+  width: 100%;
+  // border: 1px solid rgb(3, 3, 3);
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 20px;
+  overflow: hidden;
+  min-height: 34rem;
+  max-height: 40rem;
+
+  @media (min-width: 1920px) and (max-width: 2559px) {
+    max-height: 35rem;
+  }
+
+  .banner-container {
+    width: 100%;
+    height: 36%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+
+    .banner-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .profile-img {
+      position: absolute;
+      width: 8rem;
+      height: 8rem;
+      border-radius: 25%;
+      bottom: -3rem;
+      -webkit-animation: heartbeat 1.5s ease-in-out 2 both;
+      animation: heartbeat 1.5s ease-in-out 2 both;
+      cursor: pointer;
+      object-fit: cover;
+    }
+
+    @-webkit-keyframes heartbeat {
+      from {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-transform-origin: center center;
+        transform-origin: center center;
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+      }
+      10% {
+        -webkit-transform: scale(0.91);
+        transform: scale(0.91);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+      }
+      17% {
+        -webkit-transform: scale(0.98);
+        transform: scale(0.98);
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+      }
+      33% {
+        -webkit-transform: scale(0.87);
+        transform: scale(0.87);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+      }
+      45% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+      }
+    }
+    @keyframes heartbeat {
+      from {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-transform-origin: center center;
+        transform-origin: center center;
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+      }
+      10% {
+        -webkit-transform: scale(0.91);
+        transform: scale(0.91);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+      }
+      17% {
+        -webkit-transform: scale(0.98);
+        transform: scale(0.98);
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+      }
+      33% {
+        -webkit-transform: scale(0.87);
+        transform: scale(0.87);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+      }
+      45% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+      }
+    }
+  }
+
+  .user-details-container {
+    // border: 1px solid green;
+    height: 29%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1rem;
+
+    @media (min-width: 1000px) and (max-width: 1431px) {
+      height: 25%;
+    }
+
+    @media (min-width: 1920px) and (max-width: 2560px) {
+      height: 27%;
+    }
+
+    @media (min-width: 2560px) and (max-width: 5560px) {
+      height: 30%;
+    }
+
+
+  
+
+    .user-name {
+      margin-top: 1rem;
+      font-size: clamp(1rem, 0.7981rem + 0.8974vw, 1.875rem);
+      font-weight: bold;
+      margin-bottom: 0.5rem;
+
+      @media (min-width: 1920px) and (max-width: 2560px) {
+       font-size: 2rem;
+      }
+
+      @media (min-width: 2560px) and (max-width: 5560px) {
+        font-size: 2.2rem;
+      }
+    }
+
+    .user-nickname {
+      font-size: 1.3rem;
+      margin-bottom: 1rem;
+
+      @media (min-width: 1920px) and (max-width: 2560px) {
+        font-size: 1.6rem;
+       }
+
+      @media (min-width: 2560px) and (max-width: 5560px) {
+        font-size: 1.7rem;
+      }
+     
+    }
+
+    .user-quote {
+      font-size: 1.5rem;
+      text-align: center;
+      padding: 0px 20px;
+      margin-top: 0rem;
+      position: relative;
+
+      @media (min-width: 1920px) and (max-width: 2560px) {
+        font-size: 1.6rem;
+       }
+
+      @media (min-width: 2560px) and (max-width: 5560px) {
+        font-size: 1.9rem;
+      }
+    }
+  }
+
+  .border-line {
+    border: 1px solid black;
+    width: 85%;
+    margin-top: 0.5rem;
+  }
+
+  .button-profile-conatiner {
+    width: 85%;
+    display: flex;
+    justify-content: center;
+    button {
+      border: none;
+      font-size: 1.5rem;
+      font-weight: bold;
+      margin-bottom: 1.2rem;
+      width: 100%;
+      padding: 1rem;
+      border-radius: 10px;
+
+      &:active {
+        transform: scale(0.8);
+        transition: 0.3s ease-in-out;
+        cursor: pointer;
+      }
+    }
+  }
+}

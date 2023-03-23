@@ -1,0 +1,116 @@
+@import "../../../variables/variables.scss";
+
+.modal {
+  background-color: rgba(8, 8, 8, 0.431);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 3;
+  border-radius: 10px;
+
+  .modal-content {
+    background-color:white;
+    width: 40%;
+    height: 70%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+
+    .modal-form-container {
+      display: flex;
+      flex-direction: column;
+      width: 70%;
+
+      // margin-top: 5rem;
+    //   border: 1px solid red;
+      justify-content: space-around;
+
+      .register-text {
+        align-self: center;
+        font-size: 2rem;
+      }
+
+      form {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        // border: 1px solid red;
+        height: 55%;
+
+        input {
+          border: none;
+          width: 100%;
+          border-bottom: 1px solid $accent;
+            height: 2.5rem;
+          &::placeholder {
+            color: $colorPlaceholder;
+            font-size: 1.1em;
+            margin-left: 1rem;
+          }
+        }
+
+        .policy-text{
+            align-self: center;
+            font-size: 1.4rem;
+            
+        }
+
+        .register-button{
+            align-self: center;
+            margin-top: 1.5rem;
+              width: 156px;
+              height: 4rem;
+              background: none;
+              background-color: $secondary;
+              border: 1px solid $accent;
+              border-radius: 10px;
+              color: $fontColor;
+              cursor: pointer;
+              &:hover {
+                transform: scale(1.1);
+                transition: 0.1s ease-in-out;
+              }
+          }
+      }
+
+      .container-signin{
+        width: 100%;
+
+        
+        .sign-in-text{
+            font-size: 1.4rem;
+            text-align: center;
+        }
+      
+      }
+
+    }
+
+    .close-icon {
+      top: 1.5rem;
+      right: 1.5rem;
+      position: absolute;
+      width: 1.5rem;
+      cursor: pointer;
+
+      &:hover {
+        transform: scale(1.1);
+        transition: 0.1s ease-in-out;
+      }
+    }
+
+    .logo-img-modal{
+        top: 1.5rem;
+      left: 1.5rem;
+        width: 7rem;
+        position: absolute;
+        cursor: pointer;
+        
+    }
+  }
+}

@@ -1,0 +1,171 @@
+@import "./variables/variables.scss";
+
+// Light mode
+
+.light {
+  .text {
+    color: $fontColorLight;
+  }
+
+  .background {
+    background-color: $primaryLight;
+
+    // background-color: #f3f4f7;
+    // background-image: linear-gradient(315deg, #f3f4f7 0%, #caccd17a 74%);
+  }
+
+  .backgroundInner {
+    background-color: $secondaryLight;
+  }
+
+  .borderImg {
+    border: 3px solid $accentLight;
+    border-radius: 25%;
+
+    &:hover {
+      border: 3px solid #a6d236;
+      transition: 0.2s ease-in-out;
+      cursor: pointer;
+    }
+  }
+
+  .borderCurrentUser {
+    border: 1px solid #a6d236;
+  }
+
+  .button-radio {
+    background-color: $accentLight;
+    border-radius: 15px;
+    border: 1px solid #f0b502;
+    
+  }
+
+  .button-TextInput {
+    background-color: $accentLight;
+    border-radius: 15px;
+
+    &:hover {
+      cursor: pointer;
+      border: 1px solid #a6d236;
+    }
+
+    &:focus {
+      outline: 1px solid #a6d236;
+    }
+    // &:hover{
+    //   color: #fffc54;
+    // }
+  }
+
+  .accent {
+    color: $accentLight;
+  }
+
+  .placeholder {
+    color: $colorPlaceholderLight;
+  }
+
+  .border {
+    border: 1px solid $accentLight;
+  }
+
+  .border-line {
+    border: 1px solid rgb(230, 230, 230);
+  }
+
+  .box-shadow {
+    // -webkit-box-shadow: 0px 1px 10px 2px rgba(0,0,0,0.75);
+    // -moz-box-shadow: 0px 1px 10px 2px rgba(0,0,0,0.75);
+    // box-shadow: 0px 1px 8px 1px rgba(0,0,0,0.75);
+
+    box-shadow: rgba(0, 0, 0, 0.13) 0px 3px 8px;
+  }
+}
+
+///////Dark mode
+
+.dark {
+  .text {
+    color: $fontColor;
+  }
+
+  .textPostDate {
+    color: #f0b502;
+  }
+
+  .textPostNickname{
+    color: rgb(181, 181, 181);
+  }
+
+  .background {
+    background-color: $primary;
+    //   background-color: #2a2a72;
+    // background-image: linear-gradient(315deg, #2a2a72 0%, #009ffd 74%);
+
+    //   background-color: #000000;
+    // background-image: linear-gradient(147deg, #3a3737 0%, #2c3e50 74%);
+  }
+
+  .backgroundInner {
+    background-color: $secondary;
+  }
+
+  .accent {
+    color: $accent;
+  }
+
+  .placeholder {
+    color: $colorPlaceholder;
+  }
+
+  .border {
+    border: 1px solid $accent;
+  }
+
+  .borderCurrentUser {
+    border: 1px solid #f0b502;
+  }
+
+  .borderImg {
+    border: 3px solid $accent;
+    border-radius: 25%;
+    &:hover {
+      border: 3px solid #f0b502;
+      transition: 0.2s ease-in-out;
+      cursor: pointer;
+    }
+  }
+  .button-radio {
+    background-color: $accent;
+    border-radius: 15px;
+    border: 1px solid #f0b502;
+    
+  }
+
+
+  .button-TextInput {
+    background-color: $accent;
+    border-radius: 15px;
+    
+   
+
+    &:hover {
+      cursor: pointer;
+      border: 1px solid #f0b502;
+    }
+
+    &:focus {
+      outline: 1px solid #f0b502;
+    }
+    // &:hover{
+    //   color: #fffc54;
+    // }
+  }
+
+  .border-line {
+    border: 1px solid $accent;
+  }
+  .box-shadow {
+    box-shadow: rgba(32, 32, 32, 0.253) 0px 3px 8px;
+  }
+}

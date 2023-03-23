@@ -1,0 +1,32 @@
+.left-section-container {
+  width: 21%;
+  height: 100vh;
+  
+  display: flex;
+  flex-direction: column;
+  // justify-content: space-between;
+  gap: 2rem;
+  padding: 1.5rem;
+  position: relative;
+  margin-left: 1rem;
+  // overflow-y: scroll;
+
+  
+  @media (min-width: 1180px) and (max-width: 1432px) {
+    width: 30%;
+    min-width: 23rem;
+  }
+
+   @media (min-width: 300px) and (max-width: 1180px) {
+   display:none;
+  }
+
+  // @media (min-width: 768px) and (max-width: 1000px) {
+  //   height: 2.8rem;
+  // }
+
+  // @media (min-width: 300px) and (max-width: 767px) {
+  //   height: 2.8rem;
+  // }
+
+}

@@ -1,0 +1,35 @@
+.chat-container{
+    position: fixed;
+    bottom: 0;
+    right: 5%;
+    min-width: 30rem;
+    height: 55%;
+    border-radius: 5px;
+    
+    @media (min-width: 2560px) and (max-width: 4559px) {
+      right: 18%;
+      min-width: 36rem;
+      height: 45%;
+    }
+
+    img{
+        width: 1.5rem;
+        position: absolute;
+        right: 1.2rem;
+        top: 1.2rem;
+        cursor: pointer;
+
+        &:hover {
+          transform: scale(1.1);
+          transition: 0.1s ease-in-out;
+        }
+    }
+
+  
+
+   
+
+
+   
+    
+}

@@ -1,0 +1,26 @@
+.profile-section-container{
+    width: 60%;
+    height: 100vh;
+    // border: 1px solid red;
+    border-radius: 20px;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    overflow-y: scroll;  
+ 
+    @media (min-width: 1000px) and (max-width: 1200px) {
+      width: 100%;
+     }
+  
+    @media (min-width: 1200px) and (max-width: 1432px) {
+      width: 60%;
+      padding: 1rem 1.5rem;
+    }
+  
+    @media (min-width: 300px) and (max-width: 1001px) {
+          width: 100%;
+         }
+   
+
+}

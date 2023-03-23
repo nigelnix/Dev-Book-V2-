@@ -1,0 +1,47 @@
+
+
+.contacts-container {
+  width: 100%;
+  // border: 2px solid rgb(0, 0, 0);
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 20px;
+  overflow: hidden;
+min-height: 34rem;
+  max-height: 40rem;
+ 
+
+ 
+  @media (min-width: 1920px) and (max-width: 2559px) {
+    max-height: 35rem;
+  }
+
+  .card-title {
+    width: 85%;
+    margin-top: 1rem;
+    font-size: 1.8rem;
+    text-align: left;
+    margin-bottom: 1rem;
+    @media (min-width: 2560px) and (max-width: 5560px) {
+      font-size: 2.2rem;
+     }
+  }
+
+  .border-line {
+    width: 85%;
+    border: 1px solid black;
+  }
+
+  .contacts-box {
+    width: 85%;
+    height: 85%;
+    overflow: hidden;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+
+    
+  }
+}
